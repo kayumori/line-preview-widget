@@ -86,8 +86,8 @@ export default function App() {
 
   const getRichMenuHeight = () => {
     if (!showMenu) return 0;
-    if (richMenuType === "large") return 270;
-    if (richMenuType === "small") return 135;
+    if (richMenuType === "large") return 180;
+    if (richMenuType === "small") return 90;
     return 0;
   };
 
@@ -163,7 +163,7 @@ export default function App() {
         >
           <div
             className="bg-gray-900 rounded-3xl p-3 shadow-2xl"
-            style={{ width: "360px" }}
+            style={{ width: "420px" }}
           >
             <div className="bg-black rounded-t-3xl pt-2 pb-1">
               <div className="flex justify-center">
@@ -173,7 +173,7 @@ export default function App() {
 
             <div
               className="bg-white rounded-2xl overflow-hidden shadow-2xl relative"
-              style={{ height: "702px" }}
+              style={{ height: "820px" }}
             >
               <div className="bg-white border-b border-gray-200 px-4 py-3 flex items-center gap-3 backdrop-blur-sm bg-opacity-95">
                 <div className="w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center shadow-sm">
@@ -188,7 +188,7 @@ export default function App() {
                 className="overflow-y-auto p-4"
                 style={{
                   backgroundColor: "#95B1DA",
-                  height: `calc(702px - 60px - 50px - ${getRichMenuHeight()}px)`,
+                  height: `calc(820px - 60px - 50px - ${getRichMenuHeight()}px)`,
                 }}
               >
                 {messages.map((msg) => (
