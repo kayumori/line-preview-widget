@@ -173,7 +173,7 @@ export default function App() {
 
             <div
               className="bg-white rounded-2xl overflow-hidden shadow-2xl relative"
-              style={{ height: "820px" }}
+              style={{ height: "750px" }}
             >
               <div className="bg-white border-b border-gray-200 px-4 py-3 flex items-center gap-3 backdrop-blur-sm bg-opacity-95">
                 <div className="w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center shadow-sm">
@@ -188,7 +188,7 @@ export default function App() {
                 className="overflow-y-auto p-4"
                 style={{
                   backgroundColor: "#95B1DA",
-                  height: `calc(820px - 60px - 50px - ${getRichMenuHeight()}px)`,
+                  height: `calc(750px - 60px - 50px - ${getRichMenuHeight()}px)`,
                 }}
               >
                 {messages.map((msg) => (
