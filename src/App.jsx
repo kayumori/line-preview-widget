@@ -66,7 +66,7 @@ export default function App() {
         const charWidth = getCharWidth(char);
 
         // 15文字幅を超える場合は改行
-        if (currentWidth + charWidth > 100000) {
+        if (currentWidth + charWidth > 32) {
           result.push(currentLine);
           currentLine = char;
           currentWidth = charWidth;
